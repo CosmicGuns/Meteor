@@ -1,0 +1,47 @@
+# Meteor v.1.0.0-BETA
+# Created by Velinquish <3
+
+# What will appear in front of every message sent by the plugin
+plugin-prefix: '&c&lMeteor &8» &7'
+
+# Main command for Meteor
+main-command: 'meteor'
+# Plugin aliases - alternatives to /meteor
+plugin-aliases:
+    - 'met'
+    
+# Permission for configuring Meteors. The %action% placeholder will be replaced with the following valid actions:
+# - spawn (spawns a meteor in one of the possible locations)
+# - set (one of the possible spawn locations for a meteor)
+# - list (lists all possible locations for a meteor)
+# - reload
+permission: 'meteor.%action%'
+
+# If enabled, the meteor hurtles downward at an angle so it doesn't always fall straight down.
+random-angle: true
+# The maximum number of meteors that can exist at any one time. Set to -1 for infinite.
+max-meteors: 1
+# Amount of time that passes (in ticks, where 20 ticks = 1 second) before the meteor despawns. Set to -1 to disable.
+despawn-time: 600 # 600 ticks, or 30 seconds by default
+# The height from which the meteor falls. Set to -1 to spawn it where the location is set.
+fall-height: 231
+# The speed at which the meteor falls and how far it goes.
+speed: 3.8
+# Whether gravity is enabled when no destinations are set
+gravity: true
+particles:
+    enable: true
+    # The delay after the meteor spawns and before the particles begin spawning
+    delay: 5
+    # Frequency that particles spawn (in ticks)
+    frequency: 5
+# Announcement that broadcasts when someone gets the meteor.
+announcement-enabled: true
+claimed-meteor: '%prefix%&c%player% &7got the meteor!'
+# Only if despawn-time is greater than 0
+despawned-meteor: '%prefix%&cNobody got the meteor :('
+
+# Enable debug mode
+debug: true
+# Do not touch this unless you know what you are doing!
+config-version: 1

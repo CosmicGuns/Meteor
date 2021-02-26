@@ -1,0 +1,9 @@
+net\velinquish\meteor\commands\SpawnCommand.class
+net\velinquish\meteor\commands\ReloadCommand.class
+net\velinquish\meteor\commands\SetItemCommand.class
+net\velinquish\meteor\commands\SetCommand.class
+net\velinquish\meteor\commands\ListCommand.class
+net\velinquish\meteor\Meteor.class
+net\velinquish\meteor\CommandManager.class
+net\velinquish\meteor\LocationManager.class
+net\velinquish\meteor\commands\VersionCommand.class

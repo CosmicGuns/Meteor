@@ -1,0 +1,50 @@
+# You may turn any message here into something like this with hover/run/suggest effects on the text.
+# Each element of the list is another segment of the message with different effects.
+command-message:
+  - message: '&8&m===========&4&l Meteor &7Commands &8&m==========='
+  # If new-line is true, the next segment will appear on a new line. Otherwise, it'll be attached to the end of the last segment.
+  - new-line: true
+    message: '&c/meteor help&8: &7Displays this message'
+    hover: '&eClick to run'
+    run: '/meteor help'
+  - new-line: true
+    message: '&c/meteor spawn&8 &7Spawns a meteor in the sky'
+    hover: '&eClick to run'
+    run: '/meteor spawn'
+  - new-line: true
+    message: '&c/meteor set&8: &7Sets a meteor spawn location/destination'
+    hover: '&eClick to run'
+    suggest: '/meteor set '
+  - new-line: true
+    message: '&c/meteor setitem&8: &7Customizes the meteor drop'
+    hover: '&eClick to run'
+    run: '/meteor setitem'
+  - new-line: true
+    message: '&c/meteor list&8: &7Lists all meteor spawn locations'
+    hover: '&eClick to run'
+    run: '/meteor list'
+  - new-line: true
+    message: '&c/meteor about&8: &7Gives you plugin information'
+    hover: '&eClick to run'
+    run: '/meteor version'
+  - new-line: true
+    message: '&c/meteor reload&8: &7Reloads the configuration files'
+    hover: '&eClick to run'
+    run: '/meteor reload'
+    
+locations-list-heading: '&8&m===========&4&l Meteor &7Locations &8&m==========='
+destinations-list-heading: '&8&m==========&4&l Meteor &7Destinations &8&m=========='
+locations-list-item: '&7- &c%x%, &c%y%, &c%z%, &c%world%'
+    
+command-set-usage: '%prefix%&4Usage: &c/meteor set <spawn/destination> &f[<x> <y> <z> [<world>]]'
+command-set-console-usage: '%prefix%&4Usage: &c/meteor set &f<x> <y> <z> <world>'
+
+meteor-spawned: '%prefix%A meteor has been spawned!'
+location-set: '%prefix%Successfully set location!'
+meteor-reward-set: '%prefix%The item in your hand will now be dropped by the meteor!'
+plugin-reloaded: '%prefix%Meteor has been successfully &c&nreloaded!'
+
+no-permission: '%prefix%You must have the permission &c&n%permission%&7 to execute this command.'
+no-locations: '%prefix%There are no spawn locations! Use &c/meteor set &7to set meteor spawn locations!'
+invalid-world: '%prefix%&c%world%&7 is not a valid world! Please enter a valid world name.'
+invalid-material: '%prefix%The item in your hand must be a valid material!'

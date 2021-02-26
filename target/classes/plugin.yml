@@ -1,0 +1,4 @@
+name: Meteor
+main: net.velinquish.meteor.Meteor
+version: 1.0.0-BETA
+author: Velinquish
